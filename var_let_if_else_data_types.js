@@ -21,6 +21,7 @@ let lastName = "Ma";
 let person = {
   name: "Tom",
   lastName: "Reader",
+  age: 15
 };
 // O`zgaruvchini tipini aniqlash
 console.log(typeof person);
@@ -41,7 +42,22 @@ console.log(typeof kid);
 
 /* JavaScript dasturlash tili dinamik tipli dasturlash tili hisoblanadi!
 Bu degani typelar har doim o`zgaruvchan hisoblanadi, o`zguvchini e'lon qilish 
-joyida hech qanday tiplar berilmaydi. Uni o`zi o`zgaruvchini qiymatidan uning tipini aniqlaydi */
+joyida hech qanday tiplar berilmaydi. Uni o`zi o`zgaruvchini qiymatidan 
+uning tipini aniqlaydi */
+
+// * Type conversion
+let aa = 2;
+let bb = "2";
+console.log(aa + bb);
+console.log(aa + parseInt(bb));
+/*parseInt() funksiyasi faqat satr sonlardan tashkil topsagina uni 
+`string` tipidan `number` tipiga o`tira oladi*/
+console.log(Number(bb));
+console.log(String(aa));
+
+let n = '15.1321';
+let m = parseFloat(n);
+console.log(m);
 
 // Matematik operatorlar
 /* +, -, *, **,  /  */
@@ -62,21 +78,13 @@ let name2 = "Jonatan";
 let lastName2 = "Swift";
 console.log(name2 + lastName2);
 
-// * Type conversion
-let aa = 2;
-let bb = "2";
-console.log(aa + bb);
-console.log(aa + parseInt(bb));
-/*parseInt() funksiyasi faqat satr sonlardan tashkil topsagina uni 
-`string` tipidan `number` tipiga o`tira oladi*/
-console.log(Number(bb));
-console.log(String(aa));
+
 // operatorlarni qisqa ko`rinishda yozish
 let x = 5;
 x = x + 5; //10
 x += 5; //15
 console.log(x); //15
-/* +=, -=, *=, /= */
+/* +=, -=, *=, /=, **=, %= */
 
 /* Increment & Decrement */
 let aaa = 1;
@@ -87,7 +95,7 @@ aba--;//Decrement sonni qiymatini 1 ga kamaytiradi
 console.log(aba);
 
 // Comparison operators
-/* ! >, <, ==, >=, <=, != */
+/* >, <, ==, >=, <=, != */
 let r = 5;
 let t = 3;
 console.log(r == t);
@@ -129,8 +137,9 @@ davlat!`);
    shart false qiymat qaytarsa shu yerdagi qism ishlaydi
  }; */ 
 
- //TODO: 2 sondan beriladi berilgan sonlardan kichigini toping!
+ //TODO: 2 sondan beriladi berilgan shu sonlardan kichigini toping!
  //TODO: Bitta son beriladi berilgan son `musbat` yoki `manfiy` ekanligini aniqlang!
+ //TODO: Bitta son beriladi berilgan songa mos hafta kunini chiqaring!
 
  //* Ternary operators {? : ;}
 /**
