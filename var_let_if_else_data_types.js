@@ -62,13 +62,15 @@ let name2 = "Jonatan";
 let lastName2 = "Swift";
 console.log(name2 + lastName2);
 
+// * Type conversion
 let aa = 2;
 let bb = "2";
 console.log(aa + bb);
 console.log(aa + parseInt(bb));
 /*parseInt() funksiyasi faqat satr sonlardan tashkil topsagina uni 
 `string` tipidan `number` tipiga o`tira oladi*/
-
+console.log(Number(bb));
+console.log(String(aa));
 // operatorlarni qisqa ko`rinishda yozish
 let x = 5;
 x = x + 5; //10
@@ -85,7 +87,7 @@ aba--;//Decrement sonni qiymatini 1 ga kamaytiradi
 console.log(aba);
 
 // Comparison operators
-/* >, <, ==, >=, <=, != */
+/* ! >, <, ==, >=, <=, != */
 let r = 5;
 let t = 3;
 console.log(r == t);
@@ -96,3 +98,111 @@ console.log(r > t);
 console.log(r < t);
 console.log(r + 5 < t - 2);
 console.log(r > 5 < t == 2);
+
+//TODO: BMI Calculator. Coding challenge #1 
+
+//* String
+const name3 = 'Angela';
+const job = 'teacher';
+const birthYear = 2003;
+const year = 2021;
+const angela = "I'm " + name3 + ', a ' + (year - birthYear) +
+' years old ' + job + '!';
+console.log(angela);
+// Osonroq usuli
+const angela2 = `I'm ${name3}, a ${year - birthYear} years old!`
+console.log(angela2);
+// Stringlarni console.logda chiqarish
+console.log("O`zbekiston kelajagi buyuk davlat!");
+console.log("O`zbekiston \n\ kelajagi \n\ buyuk \n\ davlat!");
+console.log(`O'zbekiston 
+kelajagi 
+buyuk 
+davlat!`);
+
+// if else statement & ternary operators
+/**
+ *! shart operatori
+ *! if (shart) {
+   shart true qiymat olsa shu yerdagi qism ishlaydi
+ } else {
+   shart false qiymat qaytarsa shu yerdagi qism ishlaydi
+ }; */ 
+
+ //TODO: 2 sondan beriladi berilgan sonlardan kichigini toping!
+ //TODO: Bitta son beriladi berilgan son `musbat` yoki `manfiy` ekanligini aniqlang!
+
+ //* Ternary operators {? : ;}
+/**
+ *! shart ? shart true qiymat olsa shu yerdagi qism ishlaydi : shart false qiymat qaytarsa shu yerdagi qism ishlaydi; */
+
+//TODO: Coding challenge #2
+
+// Type Coercion
+console.log('I am ' + 23 + ' years old');
+console.log('44' + 23 + '1');
+console.log('44' - 23 - '1');// Coercion
+console.log('44' * 2);// Coercion
+console.log('44' / 2);// Coercion
+console.log('44' > '23');// Coercion
+
+let n = '1' + 1;//'11'
+n = n - 1;
+console.log(n);
+
+let m = '1' - 1;// 0
+m = m - 1;
+console.log(m);
+
+// 5 flasy valus: 0, '', undefined, null, NaN
+/* Faqat flase qiymat qaytaradigan qiymatlar */
+console.log(Boolean(0));
+console.log(Boolean(''));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean(NaN));
+console.log(Boolean({}));
+console.log(Boolean('Janos'));
+
+// == & ===
+/* == -> faqat qiymatlarni solishtiradi */
+console.log('18' == 18);
+/* === -> ham qiymati ham tipi bo`yicha solishtiradi */
+console.log('18' === 18) ; 
+
+// foydalanuvchi kiritgan ma'lumotni o`qib olish
+let num = prompt("Yoqtirgan soningizni kiriting:");
+console.log("Siz yotirgan son: " + num);
+
+//* ROSTLIK JADVALI
+/*
+_______________AND - &&________
+|   A   |   B   |    A && B   |
+|   0   |   0   |      0      |
+|   1   |   0   |      0      |
+|   0   |   1   |      0      |
+|   1   |   1   |      1      |
+_______________________________
+______________OR - ||_________
+|   A   |   B   |   A || B   |
+|   0   |   0   |      0     |
+|   1   |   0   |      1     |
+|   0   |   1   |      1     |
+|   1   |   1   |      1     |
+______________________________
+_________NOT - !_________
+|   A   |    !A     |  
+|   0   |     1     |
+|   1   |     0     |
+_____________________
+*/
+//  and
+ console.log((1 > 2) && (3 > 1));
+
+//  or
+console.log((1 > 2) || (3 > 1));
+
+//  not
+console.log(!(1 > 2));
+
+// TODO: Coding challenge #3
