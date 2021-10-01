@@ -14,3 +14,19 @@ function task1() {
     }
   }
 }
+// task1();
+
+function task2() {
+  for (let index = 0; index < a.length; index++) {
+    if ((index < a.length - 1) && (a[index] + a[index + 1]) % 2 == 0) {
+      console.log(`${a[index]},${a[index + 1]}`);
+    }
+  }
+  console.log("---------Task2 map----------");
+  a.map(
+      son =>
+        ((a.indexOf(son) < a.length - 1) && (son + a[a.indexOf(son) + 1]) % 2 == 0)? console.log(`${son},${a[a.indexOf(son) + 1]}`): ""
+      );
+}
+// task2();
+
