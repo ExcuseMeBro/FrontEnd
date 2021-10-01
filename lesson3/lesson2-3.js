@@ -49,10 +49,10 @@ const Person = {
     gender: "male"
 }
 let nameKey = "Name"
-// console.log(Person.age);
-// console.log(Person['age']);
-// console.log(Person['first' + nameKey]);
-// console.log(Person['last' + nameKey]);
+console.log(Person.age);
+console.log(Person['age']);
+console.log(Person['first' + nameKey]);
+console.log(Person['last' + nameKey]);
 
 // Loops (Takrorlanuvchi jarayonlar)
 // For
