@@ -35,5 +35,3 @@ let s = 0;
 a.map(price => s += price);
 console.log(s);
 let c = notebookStore.filter(n => n.cpu == "i3");
-
-
