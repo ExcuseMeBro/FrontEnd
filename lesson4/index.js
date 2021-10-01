@@ -30,3 +30,29 @@ function task2() {
 }
 // task2();
 
+function task3(){
+    // 1-usul
+    // console.log(a.reverse());
+
+    // 2-usul
+    let b = [];
+    for (let i = a.length - 1; i >= 0; i--){
+        b.push(a[i]);
+    }
+    console.log(b);
+}
+// task3();
+
+function task4(){
+    for(let i = 1; i < a.length; i += 2){
+        console.log(a[i]);
+    }
+}
+// task4();
+
+function task5(){
+    let s = 0;
+    a.map(son => s += son);
+    console.log(s);
+}
+task5();
