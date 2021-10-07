@@ -60,11 +60,51 @@ function task11(x, y) {
 }
 //task11(5,8);
 
-function task12(n, x) {
+/* function task12(n, x) {
   let s = 0;
   for (let i = 1; i <= n; i++) {
     s += ((-1) ** (i - 1) * (x - 1) ** i) / i;
   }
   return s;
 }
-console.log(task12(12, 0.45));
+console.log(task12(12, 0.45)); */
+
+// function task5(x,n){
+//     let S = 0;
+//     for(let i=1; i<=n ;i++){
+//         S += (x**(2*i-1))/i;
+//     }
+//     return S;
+// }
+// console.log(task5(6,2));
+
+// function factorialize(num) {
+//   if (num < 0) return -1;
+//   else if (num == 0) return 1;
+//   else {
+//     return num * factorialize(num - 1);
+//   }
+// }
+
+// function task4(n) {
+//   for (let i = 1; i <= n; i++) {
+//     console.log(factorialize(i));
+//   }
+// }
+// task4(10);
+// let counttt = 0;
+// for (let i = 11; i < 100; i+=11){
+//   counttt += 1;
+//   console.log(i);
+// }
+
+// for (let i = 1; i < 10; i++) {
+//   for (let j = 0; j < 10; j++) {
+//     counttt += 1;
+//     console.log(`${i}${j}${j}${i}`);
+//   }
+// }
+// 101 111 121 131 141 151 161 202 212
+
+// console.log(counttt);
+
