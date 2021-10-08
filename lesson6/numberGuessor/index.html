@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessor game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="game">
+      <div class="header">
+        <button class="btn again">Again</button>
+        <p class="between">(between 1 and 20)</p>
+        <div class="clearfix"></div>
+        <h1>Guess My Number!</h1>
+        <div class="line">
+          <div class="number">?</div>
+        </div>
+      </div>
+      <div class="main">
+        <table>
+          <tr>
+            <td width="50%">
+              <input type="number" class="enter-number" />
+              <button class="btn check">Check!</button>
+            </td>
+            <td width="50%">
+              <p class="message">Start Guessing.....</p>
+              <br />
+              <p>Score: <span class="score">20</span></p>
+              <p>Highscore: <span class="high-score">0</span></p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
