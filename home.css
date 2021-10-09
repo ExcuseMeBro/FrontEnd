@@ -1,0 +1,57 @@
+.boxes {
+    width: 200px;
+    height: 400px;
+    position: relative;
+    top: 80px;
+    left: 50px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(#00b89394, #00b894);
+    border-radius: 100%;
+    position: absolute;
+    animation-name: bbb;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+img {
+    display: block;
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+    z-index: -1;
+    animation-name: toWidth;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes toWidth {
+    0% {
+        opacity: 1;
+        width: 250px;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes bbb {
+    0% {
+        top: 80px;
+
+    }
+    100% {
+        top: 30px;
+    }
+}
