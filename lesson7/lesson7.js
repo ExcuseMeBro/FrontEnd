@@ -99,12 +99,6 @@ const users = [
 
 let result = users[0]?.name ?? "Foydalanuvchilar ro`yhati bo`sh!";
 console.log(result);
-// SETS
-
-// MAPS
-
-// STRING
-
 // Strong password generator yasang!
 // Parolda kamida 1 ta katta harf, 1 ta kichik harf, 1 ta son hamda
 // 1 ta maxsus belgi va 8 ta belgidan kam bo`lmasligi kerak
