@@ -1,11 +1,14 @@
 // Text yozish uchun ishlatiladi
 // document.querySelector('.number').textContent = 20;
+// document.querySelector('.message').textContent = 20;
+// document.querySelector('.score').textContent = 45;
+// document.querySelector('.high-score').textContent = 45;
 // console.log(document.querySelector('.number').textContent);
 // Inputga ma'lumot chiqarish va inputdan ma'lumot olish
 // document.querySelector('.enter-number').value = 15;
 // console.log(document.querySelector('.enter-number').value);
 
-// Handling click event!
+// Handling click event!  
 
 let highScore = 0;
 function game() {
@@ -49,6 +52,7 @@ function again(hhh) {
     document.querySelector(".message").textContent = "Start Guessing.....";
     document.querySelector(".score").textContent = 20;
     document.querySelector(".high-score").textContent = hhh;
+    game();
   });
 }
 
