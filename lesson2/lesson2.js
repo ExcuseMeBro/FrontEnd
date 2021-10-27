@@ -17,6 +17,7 @@ console.log(num);
 // } else {
 //   console.log(`${num} - bunday hafta kuni yo'q!`);
 // }
+
 n = Number(num);
 switch (n) {
   case 1:
