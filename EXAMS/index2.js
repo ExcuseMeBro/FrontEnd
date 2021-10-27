@@ -40,4 +40,42 @@ let person = {
     age: 12,
     phone: 152165
 }
-person
+
+let personKeys = String(Object.keys(person));
+console.log(personKeys);
+
+let len = Object.keys(person).length;
+console.log(len);
+
+
+function task22(a, b){
+    b.forEach(element => {
+        if (!a.includes(element)){
+            a.push(element);
+        }
+    });
+    console.log(a);
+}
+// task22([1,2,3], [1,3,10,100]);
+
+function task23(a, b){
+    b.forEach(element => {
+        if (a.includes(element)){
+            a[a.indexOf(element)] = 0;
+            b[b.indexOf(element)] = 0;
+        }
+    });
+    let c = [...a, ...b];
+    console.log(c.filter(item => item != 0).map(item => String(item)));
+}
+// task23([1,2,3], [1,3,10,100]);
+
+function task42(a, b){
+    b.forEach(element => {
+        if (!a.includes(element)){
+            a.push(element);
+        }
+    });
+    console.log(a.map(item => String(item)));
+}
+// task42([1,2,3], [1,3,10,100]);
