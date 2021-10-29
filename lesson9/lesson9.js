@@ -49,6 +49,30 @@ console.log(myCountry.split(" "));
 console.log(hi.startsWith("h"));
 // Satr qaysi belgidan yoki belgilar to`plamidan tugaganini tekshirish
 console.log(hi.endsWith("!"));
+// Arraydan String hozil qilish
+let a = ["apple", "orange", "lemon"]
+console.log(a.join('|'));
+// Stingni oldidan bo`sh joy qoldirish
+console.log(hi.padStart(10, "*"));
+console.log(hi.padEnd(10, "*"));
+
+// Berilgan so`zni stringdan qidirish
+console.log(hi.search("ll"));
+
+/* TODO: Hackerrank staircase topshiriqini ishlash
+https://www.hackerrank.com/challenges/staircase/problem?h_r=internal-search */
+/* 
+input => 4
+output =>
+   #
+  ##
+ ###
+#### */
+
+/* TODO: Karta raqami beriladi shuni CLICK dasturidagidek 
+ko`rinishga keltiring! */
+/* 8600**********12
+   9615**********45 */ 
 
 
 
