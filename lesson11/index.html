@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GroupBy</title>
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
+      integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button id="button"></button>
+    </div>
+    <table
+      class="
+        table table-hover table-success table-striped table-bordered
+        d-none
+      "
+    >
+      <thead>
+        <tr class="text-center">
+          <th class="bg-success">GURUH 1</th>
+          <th class="bg-primary">GURUH 2</th>
+          <th class="bg-warning">GURUH 3</th>
+        </tr>
+      </thead>
+      <tbody class="result"></tbody>
+    </table>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script>
+      $(function () {
+        $("#button").click(function () {
+          $("#button").addClass("onclic", 250, validate);
+        });
+
+        function validate() {
+          setTimeout(function () {
+            $("#button").removeClass("onclic");
+            $("#button").addClass("validate", 450, callback);
+          }, 2250);
+        }
+        function callback() {
+          setTimeout(function () {
+            $("#button").addClass("d-none");
+            $(".table").removeClass("d-none");
+            generator();
+          }, 1250);
+        }
+        // GENERATOR
+        let students = [
+          "hello1",
+          "hello2",
+          "hello3",
+          "hello4",
+          "hello5",
+          "hello6",
+          "hello7",
+          "hello8",
+          "hello9",
+          "hello10",
+          "hello11",
+          "hello12",
+          "hello13",
+          "hello14",
+          "hello15"
+        ];
+        var i = 1; //  set your counter to 1
+        let len = students.length;
+        function generator() {
+          setTimeout(function () {
+            let temp = students.length - 1;
+            console.log(temp);
+            function rand(){
+              return Math.trunc(Math.random(temp) * 10);
+            }
+            let group1 = rand();
+            let group2 = rand();
+            let group3 = rand();
+            let tem1 = students[group1]; 
+            
+            if (group3 == group1) {
+              group3 = rand();
+            } else if (group3 == group2){
+              group2 = rand()
+            } else {
+              group1 = rand();
+            }
+            let mockup = 
+                '<tr><td class="bg-success">' +
+                students[group1] +
+                '</td><td class="bg-primary">' +
+                students[group2] +
+                '</td><td class="bg-warning">' +
+                students[group3] +
+                "</td></tr>";
+              $("table tbody").append(mockup);
+              students[group1] = 0;
+              students[group2] = 0;
+              students[group3] = 0;
+            i++; //  increment the counter
+            if (i <= len / 3) {
+              students = students.filter((item) => item != 0);
+              console.log(students);
+              generator();
+            }
+          }, 1000);
+        }
+      });
+    </script>
+  </body>
+</html>
