@@ -75,6 +75,4 @@ console.log(multiArray2.flat(2));
 // flatMap()
 const test = [[12,54,5,454,2],[15,454,54,84,54,5]];
 console.log(test.flatMap(item => item * 2));
-console.log(test.flatMap(item => item + "hello"));
-
-
+console.log(test.flatMap(item => item + 1));
