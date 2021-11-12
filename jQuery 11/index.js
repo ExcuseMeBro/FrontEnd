@@ -3,6 +3,7 @@ $(document).ready(function (){
     $("*").css("background", "green");
     // Element yordamida target qilish
     $("h1").css("font-size", "15px");
+    $("h1").css("color", "#fff");
     // Elementlarni class yordamida tutish
     $(".box").css("background-color", "red");
     $(".box").css("width", "250px");
@@ -11,7 +12,7 @@ $(document).ready(function (){
     $("#test").css("color","yellow");
     $("#test").css("font-size","250%");
     // Elementni ichidagi matnga qarab style berish
-    $( "div:contains('John')" ).css( "text-decoration", "underline" );
+    $("div:contains('John')").css("text-decoration", "underline" );
     // Juft emelentlarni tutish
     $("tr:even" ).css( "color", "#bbf" );
     // Toq emelentlarni tutish

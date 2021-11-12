@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>jQuery Events</title>
     <style>
-        span {
-            display: none;
-        }
-        .table {
-            width: 150px;
-            height: 150px;
-            margin-top: 15px;
-            background-color: coral;
-        }
-        .loadFile {
-            margin-top: 15px;
-        }
+      span {
+        display: none;
+      }
+      .table {
+        width: 150px;
+        height: 150px;
+        margin-top: 15px;
+        background-color: coral;
+      }
+      .loadFile {
+        margin-top: 15px;
+      }
+      .windowsSelector {
+          position: absolute;
+          top: 0;
+          left: 0;
+        background-color: rgba(31, 158, 243, 0.5);
+        border: 1px solid red;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <label for="name">Ism kiriting: </label>
-    <input type="text" id="name">
+    <input type="text" id="name" />
     <span>Bu juda ajoyib!</span>
     <button class="btn">Click me!</button>
+    <button class="btn2">RESET</button>
     <div class="table"></div>
     <div class="loadFile"></div>
+    <div class="windowsSelector"></div>
     <script src="../libs/jquery-3.6.0.min.js"></script>
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>

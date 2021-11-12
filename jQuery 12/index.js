@@ -1,13 +1,15 @@
-$(document).ready(function () {
+$(document).ready(function hello() {
   //1. blur() event
-  /* $("input").blur(function () { 
-        alert("Hello world!");
+  /* $("input").blur(function (kkk) { 
+        // alert("Hello world!");
         //TODO: Inputdagi ma`lumotni olib alertga chiqaring
-    }); */
+        alert($(this).val());
+        console.log(kkk);
+  }); */
   //2. change() event
   /* $("input").change(function () { 
         // alert("Hello world!");
-        console.log($("input").val());
+        console.log($(this).val());
         //TODO: Inputdagi ma`lumotni olib Yuqori registerda yozib beruvchi dastur tuzing
     }); */
   //3. click() event
@@ -16,15 +18,16 @@ $(document).ready(function () {
         // console.log($("input").val());
         //TODO: Inputdagi ma`lumotni olib Yuqori registerda yozib beruvchi dastur tuzing
     }); */
-  //4. dbclick() event
+  //4. dblclick() event
   /* $(".btn").dblclick(function () { 
-        alert($("input").val());
+        // alert($("input").val().toUpperCase());
+        $(".table").text($("input").val().toUpperCase());
         // console.log($("input").val());
     }); */
   //5. focus() event
-  // $("input").focus(function () {
-  //     $("span").css("display", "inline").fadeOut(2000);
-  // });
+  /* $("input").focus(function () {
+      $("span").css("display", "inline").fadeOut(2000);
+  }); */
   //6. focusin() and focusout() events
   /* $("input").focusin(function () { 
         $(".table").css("background-color", "green");
@@ -43,21 +46,24 @@ $(document).ready(function () {
         $(".table").text($(this).val());
     }); */
   //9. keypress() event
-  /* $("input").keypress(function () { 
-        $(".table").text($(this).val());
-    }); */
+    /* $("input").keypress(function () { 
+          $(".table").text($(this).val());
+      }); */
   //10. keyup() event
   /* $("input").keyup(function () { 
         $(".table").text($(this).val());
     }); */
-  //11. load() events
+  //11. load() event
   /* $(".btn").click(function (){
         $(".loadFile").load("index.html");
+    });
+  $(".btn2").click(function (){
+        $(".loadFile").css("display", "none");
     }); */
   //12. after() event
-  /* $("button").click(function (){
-        $(".table").after('<h1 style="color: red">hello Wolrd!</h1>');
-    }); */
+  // $(".btn").click(function (){
+  //       $(".table").after('<h1 style="color: red">Hello Wolrd!</h1>');
+  //   });
   //13. mouseup() and mousedown() events
   /* $('.table').mouseup(function (){
         $(this).after('<h1 style="color: red">hello Wolrd!</h1>');
@@ -76,10 +82,18 @@ $(document).ready(function () {
   //16. mousemove() event
   /* $(document).mousemove(function (event){
         // console.log(event);
-        $('.table').text("X = " + event.pageX + " - Y = " + event.pageY);
+        // $('.table').text("X = " + event.pageX + " - Y = " + event.pageY);
         $('.table').css("width", event.pageX);
-        $('.table').css("height", event.pageX);
+        $('.table').css("height", event.pageY);
     }); */
+   /*  $(document).mousedown(function (gg){
+      $('.windowsSelector').css("left", gg.pageX);
+      $('.windowsSelector').css("top", gg.pageY);
+      $(document).mousemove(function (event){
+        $('.windowsSelector').css("width", event.pageX-gg.pageX);
+        $('.windowsSelector').css("height", event.pageY-gg.pageY);
+    });
+  }); */
   //17. mouseover() event {CSSdagi hover effectini jQuery ko`rinishi}
   /* $(".table").mouseover(function () {
     $(this).css("width", "250px");
@@ -91,7 +105,7 @@ $(document).ready(function () {
   }); */
   
   //18. on() event
-  /* $(".table").on("click", function () {
+  $(".table").on("mouseleave click", function () {
     $(this).css("background", "red");
-  }); */
+  });
 });
