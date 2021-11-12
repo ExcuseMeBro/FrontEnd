@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Effects</title>
+    <style>
+      .box, .box2 {
+        margin-top: 15px;
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+      }
+      .box3, .box4, .box5, .box6 {
+        width: 800px;
+        height: 100px;
+        background-color: chartreuse;
+        margin: 5px 0;
+        display: none;
+      }
+      #ppp {
+        font-size: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <hr>
+    <h3>1. animate() function</h3>
+    <button id="btn1">Animate Play</button>
+    <button id="btn2">Reset Animate</button>
+    <div class="box"></div>
+    <hr>
+    <h3>2. clearQueue() function</h3>
+    <button id="play">Play</button>
+    <button id="pause">Pause</button>
+    <div class="box2"></div>
+    <hr>
+    <h3>3. delay() function</h3>
+    <button id="playDelay">Play</button>
+    <div class="box3">1</div>
+    <div class="box4">2</div>
+    <div class="box5">3</div>
+    <div class="box6">4</div>
+    <hr>
+    <button id="fadeout">Fade Out</button>
+    <button id="fadein">Fade In</button><br>
+    <img id="image" src="../lesson6/pigGame/dice-2.png" alt="DICE">
+    <hr>
+    <button id="clickme">Click me!</button>
+    <div id="ppp">Lorem, ipsum dolor.</div>
+    <script src="../libs/jquery-3.6.0.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
