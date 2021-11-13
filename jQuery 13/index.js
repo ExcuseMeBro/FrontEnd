@@ -30,14 +30,42 @@ $(document).ready(function () {
     $(".box6").delay(3000).fadeIn();
   });
   // 4. fadeIn() va fadeOut()
-  $("#fadein").click(function (){
+  $("#fadein").click(function () {
     $("#image").fadeIn(2000);
   });
-  $("#fadeout").click(function (){
+  $("#fadeout").click(function () {
     $("#image").fadeOut(2000);
   });
-  // 5. fadeTo() function
-  $("#clickme").click(function (){
+  // 5. fadeToggle() function
+  $("#fadetoggle").click(function () {
+    $("#image").fadeToggle(2000);
+  });
+  // 6. fadeTo() function
+  $("#clickme").click(function () {
     $("#ppp").fadeTo(2000, 0.4);
+  });
+  // 7. finish() function
+  $("#finish").click(function () {
+    $(".box2").finish();
+  });
+  // 8. hide() function
+  $("#hide").click(function () {
+    $("#kkk").hide();
+  });
+  // 9. show() function
+  $("#show").click(function () {
+    $("#kkk").show();
+  });
+  // 10. slideUp() va slideDown() function
+  $("#read-more1").click(function (){
+    $("#info").slideDown();
+  });
+  $("#read-more2").click(function (){
+    $("#info").slideUp();
+  });
+  // TODO: Saytlardagi read more knopkasini yasang
+  // slideToggle() function
+  $("#read-more3").click(function (){
+    $("#info").slideToggle();
   });
 });
