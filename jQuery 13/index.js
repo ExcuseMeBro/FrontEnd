@@ -29,6 +29,12 @@ $(document).ready(function () {
     $(".box5").delay(2000).fadeIn();
     $(".box6").delay(3000).fadeIn();
   });
+  $("#stop").click(function () {
+    $(".box3").stop();
+    $(".box4").stop();
+    $(".box5").stop();
+    $(".box6").stop();
+  });
   // 4. fadeIn() va fadeOut()
   $("#fadein").click(function () {
     $("#image").fadeIn(2000);
@@ -57,15 +63,19 @@ $(document).ready(function () {
     $("#kkk").show();
   });
   // 10. slideUp() va slideDown() function
-  $("#read-more1").click(function (){
+  $("#read-more1").click(function () {
     $("#info").slideDown();
   });
-  $("#read-more2").click(function (){
+  $("#read-more2").click(function () {
     $("#info").slideUp();
   });
   // TODO: Saytlardagi read more knopkasini yasang
   // slideToggle() function
-  $("#read-more3").click(function (){
+  $("#read-more3").click(function () {
     $("#info").slideToggle();
+  });
+  // toggle() function
+  $("#read-more4").click(function () {
+    $("#info").toggle();
   });
 });
