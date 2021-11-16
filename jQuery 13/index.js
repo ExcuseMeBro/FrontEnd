@@ -12,10 +12,10 @@ $(document).ready(function () {
   $("#play").click(function () {
     $(".box2").animate({ height: "500px" }, 2000);
     $(".box2").animate({ width: "500px" }, 2000);
-    // $(".box2").queue(function (){
-    //   $(this).css("background-color", "red");
-    //   $(this).dequeue();
-    // });
+    $(".box2").queue(function (){
+      $(this).css("background-color", "red");
+      $(this).dequeue();
+    });
     $(".box2").animate({ height: "200px" }, 2000);
     $(".box2").animate({ width: "200px" }, 2000);
   });
@@ -48,7 +48,7 @@ $(document).ready(function () {
   });
   // 6. fadeTo() function
   $("#clickme").click(function () {
-    $("#ppp").fadeTo(2000, 0.4);
+    $("#ppp").fadeTo(2000, 0.2);
   });
   // 7. finish() function
   $("#finish").click(function () {
@@ -62,6 +62,10 @@ $(document).ready(function () {
   $("#show").click(function () {
     $("#kkk").show();
   });
+  // toggle() function
+  $("#read-more4").click(function () {
+    $("#kkk").toggle();
+  });
   // 10. slideUp() va slideDown() function
   $("#read-more1").click(function () {
     $("#info").slideDown();
@@ -74,8 +78,5 @@ $(document).ready(function () {
   $("#read-more3").click(function () {
     $("#info").slideToggle();
   });
-  // toggle() function
-  $("#read-more4").click(function () {
-    $("#info").toggle();
-  });
+  
 });
