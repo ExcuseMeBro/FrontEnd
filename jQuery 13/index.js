@@ -1,11 +1,11 @@
 $(document).ready(function () {
   // 1. animate() function
   $("#btn1").click(function () {
-    $(".box").animate({ height: "400px" });
-    $(".box").animate({ width: "400px" });
+    $(".box").animate({ height: "400px", width: "400px" }, 3000);
+    // $(".box").animate({ width: "400px" });
   });
   $("#btn2").click(function () {
-    $(".box").animate({ height: "200px" });
+    $(".box").animate({ height: "200px", width: "200px" });
     $(".box").animate({ width: "200px" });
   });
   // 2. clearQueue() function
@@ -37,7 +37,7 @@ $(document).ready(function () {
   });
   // 4. fadeIn() va fadeOut()
   $("#fadein").click(function () {
-    $("#image").fadeIn(2000);
+    $("#image").fadeIn("slow");
   });
   $("#fadeout").click(function () {
     $("#image").fadeOut(2000);
