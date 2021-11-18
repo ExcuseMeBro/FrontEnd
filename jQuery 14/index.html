@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Effects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+        margin: 10px;
+      }
+      .hidden {
+        display: none;
+      }
+      .error, .success {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 150px;
+        height: 50px;
+        padding: 5px;
+        border-radius: 3px;
+        box-shadow: rgba(255, 0, 0, 0.651) 0px 8px 24px;
+        color: #fff;
+        background-color: red;
+        display: none;
+      }
+      .success {
+        box-shadow: rgba(0, 255, 0, 0.651) 0px 8px 24px;
+        background-color: green;
+        font-size: 80%;
+      }
+      .fa-check-circle {
+        font-size: 100%;
+      }
+      .progress {
+        position: absolute;
+        bottom: 2px;
+        left: 1px;
+        width: 158px;
+        height: 5px;
+        border-radius: 3px;
+        background-color: rgb(238, 241, 255);
+      }
+      ul.todo li {
+        margin: 5px 0;
+      }
+      ul.todo li > button {
+        background-color: red;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 3px 7px;
+      }
+    </style>
+  </head>
+  <body>
+    <p title="Hello JavaScript Wolrd!">HELLO</p>
+    <div class="box"></div>
+    <button id="hide">Hide</button>
+    <button class="show">Show</button>
+    <button class="toggle">Toggle</button>
+
+    <button id="add">Qo'shish <i class="fa fa-chevron-down"></i></button>
+    <button id="addBefore">Qo'shish <i class="fa fa-chevron-up"></i></button>
+    <button id="plus">+</button>
+    <button id="clone">Clone</button>
+    <button id="empty">Empty</button>
+
+    <br>
+    <br>
+    <div class="report-table">
+      <div class="error">
+        <i class="fas fa-exclamation-triangle"></i>&nbsp;<span>Iltimos input maydonini to'ldiring!</span>
+        <div class="progress"></div>
+      </div>
+      <div class="success">
+        <i class="fas fa-check-circle"></i>&nbsp;<span>Ma'lumot muvaffaqiyatli qo'shildi!</span>
+      </div>
+      <input type="text" id="data">
+      <button id="new">Add</button>
+      <ul></ul>
+    </div>
+    <br>
+    <hr>
+    <input type="checkbox" id="red">    
+    <label for="red">Qizil</label>
+    <input type="checkbox" id="green">    
+    <label for="green">Yashil</label>
+    <input type="checkbox" id="blue">    
+    <label for="blue">Ko'k</label>
+
+    <button id="get">Get Title</button>
+    <button id="checkClass">Check Class</button>
+    <h3></h3>
+    <!-- TODO APP yasang -->
+    <ul class="todo">
+      <li>hello1 <button class="delete"><i class="fa fa-trash"></i></button></li>
+      <li>hello2 <button class="delete"><i class="fa fa-trash"></i></button></li>
+      <li>hello3 <button class="delete"><i class="fa fa-trash"></i></button></li>
+      <li>hello4 <button class="delete"><i class="fa fa-trash"></i></button></li>
+      <li>hello5 <button class="delete"><i class="fa fa-trash"></i></button></li>
+      <li>hello6 <button class="delete"><i class="fa fa-trash"></i></button></li>
+    </ul>
+    <script src="../libs/jquery-3.6.0.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
