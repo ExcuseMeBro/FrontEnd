@@ -79,4 +79,5 @@ $(document).ready(function () {
   $(".show").click(function () {
     $(".box").removeClass("hidden");
   });
+  // TODO ochilib yopiluvchi siderbar menu yasang!
 });
