@@ -4,7 +4,7 @@ $(document).ready(function () {
     $(".box").addClass("hidden");
   });
   // 2. after()
-  let i = 0;
+  let i = 1;
   $("#add").click(function () {
     $(this).after("<h1>" + i++ + " - element!</h1>");
   });
@@ -47,11 +47,11 @@ $(document).ready(function () {
     $(".box").text($("p").attr("title"));
   });
   // 7. before()
-  let j = 0;
+  let j = 1;
   $("#addBefore").click(function () {
     $(this).before('<h1 style="color: red">' + j++ + " - element!</h1>");
   });
-  // 8. Clone()
+  // 8. clone()
   $("#clone").click(function () {
     $(".box").clone().appendTo("body");
   });
