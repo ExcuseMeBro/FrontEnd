@@ -1,0 +1,6 @@
+1. https://simpleparallax.com/
+2. https://michalsnik.github.io/aos/
+3. https://dev.to/atulcodex/cursor-animation-on-mousemove-using-javascript-4b38
+4. https://www.cssscript.com/
+5. https://p.bdir.in/
+6. https://github.com/mattboldt/typed.js/
