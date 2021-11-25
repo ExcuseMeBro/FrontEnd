@@ -28,8 +28,11 @@
         overflow: true,
       }); */
       //   2. basic
-      /* var image = document.getElementsByClassName("thumbnail");
-      new simpleParallax(image); */
+      var image = document.getElementsByClassName("thumbnail");
+      new simpleParallax(image, {
+        delay: 2,
+        transition: "cubic-bezier(0,0,0,1)",
+      });
       //   3. orientation
       /* var image = document.getElementsByClassName("thumbnail");
       new simpleParallax(image, {

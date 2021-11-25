@@ -18,15 +18,22 @@
   </head>
   <body>
     <span class="element"></span>
+    <span class="two"></span>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
-      var typed = new Typed(".element", {
-        strings: ["This is a JavaScript library", "This is an ES6 module"],
+      let typed = new Typed(".element", {
+        strings: ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam natus nisi ducimus sed, sit laborum inventore autem, recusandae fugiat voluptates vel iure, illo consequatur explicabo ratione omnis aperiam repellendus suscipit!", "This is an ES6 module"],
         smartBackspace: true,
-        backDelay: 700,
-        startSpeed: 70,
-        backSpeed: 100,
-        typeSpeed: 60,
+        backDelay: 2000,
+        backSpeed: 50,
+        typeSpeed: 100,
+      });
+      let typed2 = new Typed(".two", {
+        strings: ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam natus nisi ducimus sed, sit laborum inventore autem, recusandae fugiat voluptates vel iure, illo consequatur explicabo ratione omnis aperiam repellendus suscipit!", "This is an ES6 module"],
+        smartBackspace: true,
+        backDelay: 2000,
+        backSpeed: 50,
+        typeSpeed: 100,
       });
     </script>
   </body>

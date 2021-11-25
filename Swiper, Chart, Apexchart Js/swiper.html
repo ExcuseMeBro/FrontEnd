@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiper Examples</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <style>
+        .swiper {
+            width: 75%;
+            height: 50vh;
+            margin: auto;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            border-radius: 10px;
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 250%;
+        }
+        .swiper-slide {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            border-radius: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide red">Slide 1</div>
+        <div class="swiper-slide green">Slide 2</div>
+        <div class="swiper-slide blue">Slide 3</div>
+        <div class="swiper-slide blue">Slide 3</div>
+        <div class="swiper-slide blue">Slide 3</div>
+        <div class="swiper-slide blue">Slide 3</div>
+        <div class="swiper-slide blue">Slide 3</div>
+        <div class="swiper-slide blue">Slide 3</div>
+        <div class="swiper-slide blue">Slide 3</div>
+        <div class="swiper-slide blue">Slide 3</div>
+        <div class="swiper-slide blue">Slide 3</div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev">next</div>
+      <div class="swiper-button-next">prev</div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+      new Swiper(".swiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+          clickable: true,
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: true,
+        },
+        slidesPerView: 4,
+        spaceBetween: 30,
+        keyboard: {
+          enabled: true,
+        },
+        mousewheel: true,
+      });
+    </script>
+  </body>
+</html>
