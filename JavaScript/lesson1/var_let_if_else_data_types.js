@@ -1,7 +1,7 @@
 // Case lar
 /* JavaScript dasturlash tilida `cemoCase` da yozish best practise hisoblanadi! */
 /* Masalan Pascal dasturlash tilida `PascalCase` ishlatiladi
-Python dasturlash tilida esa `snake_case` ! */
+Python dasturlash tilida esa `snake_case`! */
 /* Har bir dasturlash tilida o`garuvchilarni nomlash shu tarzda amalga oshiriladi */
 // O`zgaruvchilarni e'lon qilish
 var name = "Mark"; /* eski versiyalarda `var` ishlatilardi */
@@ -37,7 +37,6 @@ let d = 1.2456; //number
 console.log(typeof d);
 let kid; //undefined
 console.log(typeof kid);
-/* null -- bo'sh qiymat! {Objectlarda}*/
 /* bigInt -- katta sonlar bilan ishlovchi tip*/
 
 /* JavaScript dasturlash tili dinamik tipli dasturlash tili hisoblanadi!
@@ -117,12 +116,12 @@ const year = 2021;
 const angela = "I'm " + name3 + ', a ' + (year - birthYear) +
 ' years old ' + job + '!';
 console.log(angela);
-// Osonroq usuli
+// Osonroq usuli (BackTicket String) String Interpolition
 const angela2 = `I'm ${name3}, a ${year - birthYear} years old!`
 console.log(angela2);
 // Stringlarni console.logda chiqarish
-console.log("O`zbekiston kelajagi buyuk davlat!");
-console.log("O`zbekiston \n\ kelajagi \n\ buyuk \n\ davlat!");
+console.log("O'zbekiston kelajagi \"buyuk\" davlat!");
+console.log("O'zbekiston \n\ kelajagi \n\ buyuk \n\ davlat!");
 console.log(`O'zbekiston 
 kelajagi 
 buyuk 
@@ -155,13 +154,13 @@ console.log('44' * 2);// Coercion
 console.log('44' / 2);// Coercion
 console.log('44' > '23');// Coercion
 
-let n = '1' + 1;//'11'
-n = n - 1;
-console.log(n);
+let nn = '1' + 1;//'11'
+nn = nn - 1;
+console.log(nn);
 
-let m = '1' - 1;// 0
-m = m - 1;
-console.log(m);
+let mm = '1' - 1;// 0
+mm = mm - 1;
+console.log(mm);
 
 // 5 flasy valus: 0, '', undefined, null, NaN
 /* Faqat flase qiymat qaytaradigan qiymatlar */
