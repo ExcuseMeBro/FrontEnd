@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar-wrapper {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            padding: 25px;
+        }
+        .navbar {
+            width: 90%;
+            margin: auto;
+            display: flex;
+        }
+        ul {
+            display: flex;
+            margin: 0 5%;
+            flex: 8;
+        }
+        ul li {
+            list-style-type: none;
+            flex: 1;
+        }
+        ul li > a {
+            text-decoration: none;
+            color: #555;
+        } 
+        .sign-up {
+            text-decoration: none;
+            color: orangered;
+            padding: 5px 15px;
+            border: 1px solid #999;
+            margin-top: -5px;
+            border-radius: 25px;
+            font-size: 75%;
+            text-align: center;
+            flex: 1;
+        }
+        .sign-up:hover {
+            background-color: orangered;
+            color: #fff;
+        }
+        img {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar-wrapper">
+        <div class="navbar">
+            <img src="#" alt="Logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" class="sign-up">Sign Up</a>
+        </div>
+    </div>
+</body>
+</html>
