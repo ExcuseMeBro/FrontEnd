@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preloader Example</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #preloader {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+      }
+      #preloader img {
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="preloader">
+      <img src="./loading.gif" alt="#" />
+    </div>
+    <div class="box">
+      <h3>Hello World!</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+        consectetur illum pariatur sed aperiam incidunt? Voluptate nisi in
+        ipsum, doloribus ex odio eaque facilis, ea assumenda vel accusamus sint
+        modi. Molestiae qui repellendus veritatis magni accusantium obcaecati
+        dicta natus commodi voluptates ullam corporis perferendis eum est,
+        magnam corrupti. Laboriosam sed repellendus, incidunt ipsum enim at
+        dolore. Eaque optio doloribus eveniet est ipsum! Repellendus cumque
+        earum fugiat recusandae praesentium eveniet quae alias adipisci saepe.
+        Reprehenderit et soluta, atque inventore dolore est tempora ipsam, animi
+        dolor id facilis laboriosam? Tempore in similique quos tenetur qui
+        expedita quisquam rem, reprehenderit et ut! Animi distinctio
+        voluptatibus illo nesciunt reprehenderit magnam facere assumenda sunt,
+        non deleniti sed quae aperiam blanditiis doloremque voluptates quia
+        libero? Quis quod ab debitis aperiam totam blanditiis, temporibus
+        delectus velit dicta tenetur ipsum autem animi eum, ipsam inventore
+        laudantium nisi minus fugiat dolore iste quia dignissimos! Pariatur
+        quibusdam hic quis quidem.
+      </p>
+    </div>
+    <script src="../../libs/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // $('#preloader').fadeOut(5000);
+        setTimeout(function () {
+            $('#preloader img').fadeOut(750);
+            $('#preloader').fadeOut(3000);
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>
