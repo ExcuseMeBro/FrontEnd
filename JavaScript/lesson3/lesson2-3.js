@@ -22,9 +22,10 @@ arr.unshift("KKK");
 arr.pop()
 // console.log(arr);
 // Arrayni teskari qilish
-// console.log(arr.reverse());
+arr.reverse()
+// console.log(arr);
 // Array elementlarini saralash
-// console.log(arr.sort());
+// console.log(arr.sort((a, b) => a - b));
 // Arraydan element olish
 // console.log(arr[0]);
 // Array elementini o`zgartirish
@@ -39,7 +40,6 @@ arr[0] = "Tuzik"
 // console.log(arr.includes("Bob"));
 // Arrayda hamma elementni logga chiqarish
 arr.forEach(item => console.log(item));
-
 
 // OBJECTS
 const Person = {

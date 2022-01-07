@@ -24,7 +24,7 @@ let person = {
   age: 15
 };
 // O`zgaruvchini tipini aniqlash
-console.log(typeof person);
+console.log(typeof(person));
 
 /* Primitive tiplar: number, string, boolean, undefined, null, bigInt(ES2020) */
 let a = 15; //number
@@ -59,7 +59,7 @@ let m = parseFloat(n);
 console.log(m);
 
 // Matematik operatorlar
-/* +, -, *, **,  /  */
+/* +, -, *, **,  /, % */
 let qoshish = 15 + 152;
 console.log(qoshish);
 let ayirish = 15 - 152;
@@ -93,7 +93,7 @@ let aba = 10;
 aba--;//Decrement sonni qiymatini 1 ga kamaytiradi
 console.log(aba);
 
-// Comparison operators
+// Comparison operators (Solishtirish operatorlari)
 /* >, <, ==, >=, <=, != */
 let r = 5;
 let t = 3;
@@ -104,10 +104,9 @@ console.log(r != t);
 console.log(r > t);
 console.log(r < t);
 console.log(r + 5 < t - 2);
-console.log(r > 5 < t == 2);
 
 //TODO: BMI Calculator. Coding challenge #1 
-
+massa/(boy**2)
 //* String
 const name3 = 'Angela';
 const job = 'teacher';
@@ -126,3 +125,8 @@ console.log(`O'zbekiston
 kelajagi 
 buyuk 
 davlat!`);
+
+// \n -> Enter
+// \t -> Tab 
+// ` -> BackTicket
+// ~ -> Tilda
