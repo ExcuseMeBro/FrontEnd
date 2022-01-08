@@ -9,8 +9,8 @@
 // a > b ? console.log(`${b} kichik!`) : console.log(`${a} kichik!`);
 /* BMI Calculator */
 // let massa = 64;
-// let boyi = 1.74;
-// let BMI = massa / boyi ** 2;
+// let boyi = 174;
+// let BMI = massa / ((boyi / 100) ** 2);
 // console.log(BMI);
 /*TODO: Davom qildirish kerak */
 
