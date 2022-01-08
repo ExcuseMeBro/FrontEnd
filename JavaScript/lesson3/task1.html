@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK1</title>
+</head>
+<body>
+    <div class="box">
+        <input type="text" id="data">
+        <button onclick="add()">Add</button>
+        <button onclick="display()">Display</button>
+        <hr>
+        <div class="data-box"></div>
+    </div>
+    <script>
+        let arr = [];
+        let natija = '';
+        function add() {
+            let text = document.getElementById("data").value;
+            // console.log(text);
+            arr.push(text);
+            // console.log(arr);
+        }
+        function display() {
+            // console.log(arr);
+            arr.forEach((element, index) => {
+                // console.log(`Element ${index} = ${element}`);
+                natija += "<p>Element " + index + " = " + element + "</p>";
+            });
+            document.getElementsByClassName("data-box")[0].innerHTML = natija;
+        }  
+    </script>
+</body>
+</html>
