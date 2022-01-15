@@ -1,4 +1,54 @@
-/* let a = 15;
+// Arrow function
+const add = (a, b) => a + b;
+console.log(add(2, 3));
+
+const subs = (a, b, c) => {
+    return a * b * c;
+}
+// console.log(subs(2, 3, 5));
+
+// Arrays
+let arr = ["Mark", "Tom", "Lewis", "Bob"];
+// console.log(arr);
+// Array uzunligini aniqlash
+// console.log(arr.length);
+// Arrayha element qo`shish o`ngdan
+arr.push("Jack");
+// console.log(arr);
+// Arrayga element qo`shish chapdan
+arr.unshift("KKK");
+// console.log(arr);
+// Arraydan element o`chiqish oxiridan (o`ngdan)
+arr.pop()
+// console.log(arr);
+// Arrayni teskari qilish
+arr.reverse()
+// console.log(arr);
+// Array elementlarini saralash
+// console.log(arr.sort((a, b) => a - b));
+// Arraydan element olish
+// console.log(arr[0]);
+// Array elementini o`zgartirish
+arr[0] = "Tuzik"
+// console.log(arr);
+// Array map metodi
+// console.log(arr.map(item => (item.length > 3)? item: "-"));
+// Element Indexini aniqlash
+// console.log(arr.indexOf("Bob")); //element topilmasa -1 qaytadi
+// console.log(arr.indexOf("Lewis"));
+// Elementni arrayda bor yoki yo`qligini tekshirish
+// console.log(arr.includes("Bob"));
+// Arrayda hamma elementni logga chiqarish
+arr.forEach(item => console.log(item));
+
+
+// Array elementlarini ro`yhat qilib chiqaramiz
+/* 1. Mark
+   2. Bob
+   .....
+   n. Jonas */
+
+   /* let a = 15;
 console.log(a);
 
 function qoshish(b) {

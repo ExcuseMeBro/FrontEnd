@@ -32,6 +32,7 @@ function calc() {
         alert("Iltimos faqat son kiriting!")
     }
 }
+
 function plus(){
     let a = parseInt(document.getElementById("num1").value);
     let b = parseInt(document.getElementById("num2").value);
@@ -41,6 +42,7 @@ function plus(){
         alert("Iltimos faqat son kiriting!")
     }
 }
+
 function ildiz(){
     let a = parseInt(document.getElementById("num1").value);
     if (a) {
@@ -48,7 +50,9 @@ function ildiz(){
     } else {
         alert("Iltimos faqat son kiriting!")
     }
-}function kvadrat(){
+}
+
+function kvadrat(){
     let a = parseInt(document.getElementById("num1").value);
     if (a ) {
             document.getElementById("res").value = a**2;   
