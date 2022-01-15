@@ -1,3 +1,9 @@
+/* let person = {
+    name: "Mark",
+    age: 15,
+    isActive: true
+}
+console.log(person); */
 // OBJECTS
 const Person = {
     firstName: "Bek",
