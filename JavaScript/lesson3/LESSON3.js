@@ -1,11 +1,46 @@
+// Function
+let a = 15;
+function qoshish(b) {
+    console.log("Yig`indi: " + (a + b));
+}
+qoshish(45);
+
+function qoshish(c, b) {
+    console.log("Yig`indi: " + (c + b));
+}
+qoshish(45, '12');
+
+const qoshishArrow = (a, b) => {
+    let sum = a + b;
+    return sum;
+};
+console.log(qoshishArrow(15, 45));
+console.log(qoshishArrow(15, 45));
+console.log(qoshishArrow(15, 45));
+console.log(qoshishArrow(15, 45));
+console.log(qoshishArrow(154, 45));
+console.log(qoshishArrow(15, 45));
+ 
 // Arrow function
+// => - Caret
+// const add = (a, b) => a + b;
+//        |     |  |    \  
+// funksiya_nomi \  \    \
+//           parametrlar caret 
+
 const add = (a, b) => a + b;
 console.log(add(2, 3));
 
 const subs = (a, b, c) => {
+    a += b;
     return a * b * c;
 }
 // console.log(subs(2, 3, 5));
+
+function hello(ism) {
+    console.log("Assalomu aleykum" + ism);
+}
+hello("Jack");
 
 // Arrays
 let arr = ["Mark", "Tom", "Lewis", "Bob"];
@@ -48,26 +83,6 @@ arr.forEach(item => console.log(item));
    .....
    n. Jonas */
 
-   /* let a = 15;
-console.log(a);
-
-function qoshish(b) {
-    console.log("Yig`indi: " + (a + b));
-}
-qoshish("45");
-
-const qoshishArrow = (a, b) => {
-    a = a + b;
-    return a ** 2;
-};
-console.log(qoshishArrow(15, 45));
-console.log(qoshishArrow(15, 45));
-console.log(qoshishArrow(15, 45));
-console.log(qoshishArrow(15, 45));
-console.log(qoshishArrow(154, 45));
-console.log(qoshishArrow(15, 45));
- */
-
 const arrayVal = ["Mark", 15, true];
 // console.log(typeof arrayVal);
 // console.log(arrayVal.length);
@@ -91,10 +106,3 @@ console.log(jd);
 console.log(arr.indexOf('7.6'));
 
 console.log(arr.includes("7.6"));
-
-/* let person = {
-    name: "Mark",
-    age: 15,
-    isActive: true
-}
-console.log(person); */
