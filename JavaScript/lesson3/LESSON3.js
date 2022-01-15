@@ -38,7 +38,7 @@ const subs = (a, b, c) => {
 // console.log(subs(2, 3, 5));
 
 function hello(ism) {
-    console.log("Assalomu aleykum" + ism);
+    console.log("Assalomu aleykum, " + ism);
 }
 hello("Jack");
 
@@ -53,18 +53,27 @@ arr.push("Jack");
 // Arrayga element qo`shish chapdan
 arr.unshift("KKK");
 // console.log(arr);
-// Arraydan element o`chiqish oxiridan (o`ngdan)
+// Arraydan element o`chirish oxiridan (o`ngdan)
 arr.pop()
 // console.log(arr);
 // Arrayni teskari qilish
 arr.reverse()
 // console.log(arr);
-// Array elementlarini saralash
+// Array elementlarini saralash (string bo`lsa)
+// console.log(arr.sort);
+// Array elementlarini saralash agar array faqat sonlardan tashkil topgan bo`lsa,
 // console.log(arr.sort((a, b) => a - b));
 // Arraydan element olish
 // console.log(arr[0]);
+
+let arr = ["Mark", "Tom", "Lewis", "Bob"];
+console.log(arr[0]);
+console.log(arr.length);
+console.log(arr[arr.length]);
+console.log(arr[arr.length - 1]);
+
 // Array elementini o`zgartirish
-arr[0] = "Tuzik"
+// arr[0] = "Tuzik"
 // console.log(arr);
 // Array map metodi
 // console.log(arr.map(item => (item.length > 3)? item: "-"));
@@ -75,8 +84,6 @@ arr[0] = "Tuzik"
 // console.log(arr.includes("Bob"));
 // Arrayda hamma elementni logga chiqarish
 arr.forEach(item => console.log(item));
-
-
 // Array elementlarini ro`yhat qilib chiqaramiz
 /* 1. Mark
    2. Bob
@@ -89,10 +96,13 @@ const arrayVal = ["Mark", 15, true];
 // console.log(arrayVal[arrayVal.length - 1]);
 arrayVal.push(["Kali", "Ubuntu", "Mint"]);
 console.log(arrayVal);
+
+let arr = ["Mark", "Tom", "Lewis", "Bob"];
+let b = ["Kali", "Ubuntu", "Mint"];
+arr.push(...b);
+console.log(arr);
+
 arrayVal.unshift('Kali');
-console.log(arrayVal);
-arrayVal.pop()
-arrayVal.reverse();
 console.log(arrayVal);
 const arr = ['34.5', "4.2", "7.6", "5.2", "8.6", "4.7"];
 // console.log(arr.sort((a, b) => a - b).reverse());
