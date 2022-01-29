@@ -9,11 +9,11 @@ const Person = {
     firstName: "Bek",
     lastName: "Edison",
     age: 23,
-    gender: "male"
+    "gender": "male"
 }
 let nameKey = "Name"
 console.log(Person.age);
-console.log(Person['age']);
+console.log(Person['gender']);
 console.log(Person['first' + nameKey]);
 console.log(Person['last' + nameKey]);
 
