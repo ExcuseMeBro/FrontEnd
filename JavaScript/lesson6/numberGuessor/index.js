@@ -13,9 +13,9 @@
 let highScore = 0;
 function game() {
   const secretNumber = Math.trunc(Math.random() * 20) + 1;
-  console.log(secretNumber);
+  // console.log(secretNumber);
   let score = 20;
-  document.querySelector(".check").addEventListener("click", function () {
+  document.querySelector(".check").addEventListener("click", () => {
     const guess = Number(document.querySelector(".enter-number").value);
     if (!guess) {
       document.querySelector(".message").textContent = "Son kiriting!";
@@ -44,14 +44,14 @@ function game() {
   });
 }
 game();
-function again(hhh) {
-  document.querySelector(".again").addEventListener("click", function () {
+function again(hs) {
+  document.querySelector(".again").addEventListener("click", () => {
     document.querySelector("body").style.backgroundColor = "#000";
     document.querySelector(".number").textContent = "?";
     document.querySelector(".enter-number").value = "";
     document.querySelector(".message").textContent = "Start Guessing.....";
     document.querySelector(".score").textContent = 20;
-    document.querySelector(".high-score").textContent = hhh;
+    document.querySelector(".high-score").textContent = hs;
     game();
   });
 }

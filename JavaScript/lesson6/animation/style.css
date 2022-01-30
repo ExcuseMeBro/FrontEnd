@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box {
+    display: inline-block;
+    color: #fff;
+    font-size: 200%;
+    text-align: center;
+    padding: 25px;
+}
+.box img {
+    width: 200px;
+}
+.walking {
+    position: absolute;
+    left: 0;
+}
+.hidden {
+    display: none;
+}
+
+.right {
+    transform: translateX(1200px);
+    transition: all 6s linear;
+}
