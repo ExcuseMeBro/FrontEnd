@@ -22,6 +22,6 @@
 }
 
 .right {
-    transform: translateX(1200px);
-    transition: all 6s linear;
+    transform: translateX(1300px);
+    transition: all 20s linear;
 }

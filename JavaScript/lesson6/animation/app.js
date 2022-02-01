@@ -10,6 +10,6 @@ document.addEventListener("keydown", (klavish) => {
         setTimeout(() => {
             stand.classList.remove("hidden");
             walking.classList.add("hidden");
-        }, 6000);
+        }, 20000);
     }
 });
