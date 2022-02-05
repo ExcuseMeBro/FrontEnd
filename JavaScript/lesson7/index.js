@@ -1,53 +1,37 @@
-// ARRAY
-/* let a = [0, 2, 8, 5];
-let b = [1, 5, 4]; */
-// TODO 2 arrayni qo`shib array hosil qiling! (Array, Array) => Array
-/* for (let i = 0; i < b.length; i++){
-    a.push(b[i]);
-}
-console.log(typeof a);
-console.log(a.length); */
-// ... -> 
-/* let c = [...a, ...b];
-console.log(c); 
-console.log(...a);  */
+let a = [0, 2, 8, 5];
+let b = [1, 5, 4];
+a.push(...b);
+// console.log(a);
+
+// console.log(Math.max(...a));
+// console.log(Math.max(a + b));
+// console.log(Math.max("a + b"));
+
+const firstName = "Mark";
+let n = [...firstName];
+// console.log(n);
+
+// Matn beriladi siz matnda nechta unli harf borligini aniqlang!
+// Matnda har bir belgidan nechta borligini aniqlovchi dastur tuzing!
 /* 
-function qoshish(...numbers) {
-    console.log(numbers);
-}
-qoshish(5, 2, 1, 7, 4, 6); */
+M - 13,
+e - 16,
+s - 10 */
 
-/* console.log("------ OR ------");
-console.log(0 || null || 22);
-console.log('' || "Mark");
-console.log(true || 0);
-console.log('' || 0);
-console.log(undefined || null); */
+0, '', null, NaN, undefined
+// console.log(0 && 1);
+// console.log(undefined || 0 || false || "Hello" || 13 || null);
 
-// TODO Mantiqiy ifodaning natijasini aniqlang!
-/* console.log(undefined || 0 || false || "Hello" || 13 || null);
-console.log(undefined || 0 || false || "" || "13" || null);
+// console.log(undefined || 0 || false || "" || "13" || null);
 
-console.log("------ AND ------");
-console.log(23 && "Mark");
-console.log(true && 0);
-console.log(undefined && null); */
+// console.log("----- Not Nullish ------");
+// console.log(0 ?? 10);
+// console.log('' ?? 10);
+// console.log(false ?? 10);
+// console.log("----- Nullish -----");
+// console.log(null ?? 10);
+// console.log(undefined ?? 0);
 
-// TODO Mantiqiy ifodaning natijasini aniqlang!
-/* console.log(undefined && 0 && false && "Hello" && 13 && null);
-console.log(undefined && 0 && false && "" && "13" && null); */
-
-// Check nullish value operator -> ??
-/* console.log("----- Not Nullish ------");
-console.log(0 ?? 10);
-console.log('' ?? 10);
-console.log(false ?? 10);
-console.log("----- Nullish -----");
-console.log(null ?? 10);
-console.log(undefined ?? 10); */
-
-
-// Loops with Array
 fruits = [
     "apple",
     "banana",
@@ -58,26 +42,36 @@ fruits = [
     "lemon",
     "orange",
 ];
-// TODO Arrayning barcha elementlarini quyidagi ko`rinishda consolega chiqaring!
-/* 
-apple
-banana
-cherry
-..... */
-/* for (let i = 0; i < fruits.length; i++){
-    console.log(fruits[i]);
-} */
 
-/* for (let fruit of fruits){
-    console.log(fruit);
-} */
-// let i = 0;
-// for (let fruit of fruits){
-//     console.log(`${i}.${fruit}`);
-//     i++;
+// fruits.forEach(element => {
+//     console.log(element);
+// });
+
+// for (let i = 0; i < fruits.length; i++) {
+//     console.log(fruits[i]);
 // }
 
-//entries() -> function
-for (const item of fruits.entries()) {
-    console.log(...item);
-}
+// for (let item of fruits) {
+//     console.log(`${fruits.indexOf(item)}.${item}`);
+// }
+
+// fruits.forEach((element, index) => {
+//     console.log(`${index}.${element}`);
+// });
+
+// for (const item of fruits.entries()) {
+//     console.log(item[0], item[1]);
+// }
+
+// const users = [
+//     {
+//       age: 45,
+//       email: "mark@gmail.com",
+//     },
+//   ];
+  
+//   let result = users[0]?.name ?? "Foydalanuvchilar ro`yhati bo`sh!";
+//   console.log(result);
+
+let index = Math.trunc(Math.random() * fruits.length);
+console.log(fruits[index]);

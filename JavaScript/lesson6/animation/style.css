@@ -25,3 +25,8 @@
     transform: translateX(1300px);
     transition: all 20s linear;
 }
+
+.left {
+    transform: translateX(-1300px);
+    transition: all 20s linear;
+}
