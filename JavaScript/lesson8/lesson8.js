@@ -81,10 +81,11 @@ console.log(mySet);
 // console.log(mySet);
 
 /* .forEach function with Set */
+console.log("*******************************");
 mySet.forEach((element) => console.log(element));
 
 /* Setda index tushunchasi yo`q */
-console.log(mySet[0]);
+// console.log(mySet[0]);
 
 // MAPS
 const myMap = new Map();

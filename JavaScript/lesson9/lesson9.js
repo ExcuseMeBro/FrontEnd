@@ -1,5 +1,5 @@
 const myCountry = "Hello     World!";
-// Stringdan ixtiyoriy bir harfni idex orqali chaqirib olish
+// Stringdan ixtiyoriy bir harfni index orqali chaqirib olish
 console.log(myCountry[0]);
 console.log(myCountry[myCountry.length - 1]);
 // Stringdagi ixtiyoriy bir belgini indexini aniqlash

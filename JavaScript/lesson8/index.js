@@ -3,7 +3,7 @@ const user = {
   age: 45,
   email: "mark@example.com",
 };
-// console.log(Object.keys(user));
+console.log(Object.keys(user));
 // console.log(...Object.keys(user));
 
 let userKeys = Object.keys(user);
@@ -32,19 +32,21 @@ email */
 // console.log(Object.keys(user));
 
 const users = {
-  Mark: {
+  "Mark": {
     age: 45,
     email: "mark@gmail.com"
   },
-  Lewis: {
+  "Lewis": {
     age: 25,
     email: "lewis@gmail.com"
   },
-  Bob: {
+  "Bob": {
     age: 21,
     email: "bob@gmail.com"
-  },
+  }
 };
+// console.log(users.Mark.age);
+
 // let values = Object.values(users);
 // console.log(values);
 // let s = 0;
@@ -61,22 +63,23 @@ let keysWithValues = Object.entries(users);
 
 // SETS
 let mySet = new Set([
-    "apple",
-    "orange",
-    "pear",
-    "lemon",
-    "apple",
-    "orange",
-    "pear",
-    "lemon",
-  ]);
-  let a = [];
-    mySet.forEach(item => a.push(item));
-    // console.log(a);
+  "apple",
+  "orange",
+  "pear",
+  "lemon",
+  "apple",
+  "orange",
+  "pear",
+  "lemon"
+]);
+let a = [];
+mySet.forEach(item => a.push(item));
+// console.log(a);
+// console.log(mySet);
 
-    // MAPS
+// MAPS
 const myMap = new Map();
-myMap.set("book", "kitob", "dsfdf");
+myMap.set("book", ["kitob", "dsfdf"]);
 myMap.set("sun", "quyosh");
 myMap.set("sky", "osmon");
 myMap.set("train", "poyezd");
