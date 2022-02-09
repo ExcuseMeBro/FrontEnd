@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.quti__1 {
+    background-color: rgb(5, 201, 5);
+}
+.quti__2 {
+    background-color: rgb(243, 24, 24);
+}
+.quti__1, .quti__2 {
+    display: inline-block;
+    color: #fff;
+    height: 250px;
+    width: 250px;
+    margin: 15px 25px;
+    padding: 15px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #111;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.navbar ul {
+    display: inline-block;
+}
+.navbar ul li > a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    font-size: 150%;
+    padding: 11px;
+}
+.action {
+    float: right;
+}
+.clearfix {
+    clear: both;
+}
+.active {
+    background-color: rgb(8, 231, 8);
+}
+.navbar ul li:hover {
+    background-color: #555;
+}
+.sidebar, .content {
+    display: inline-block;
+}
+.sidebar {
+    width: 250px;
+    height: 100vh; /* vh = % */
+    background-color: #333;
+    position: sticky;
+    top: 50px;
+    z-index: 0;
+    padding: 50px 15px;
+}
+.content {
+    width: calc(95% - 250px);
+}
+.sidebar ul li {
+    list-style: none;
+    padding: 5px 15px;
+}
+.sidebar ul li > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 125%;
+}
+.sidebar ul li:hover {
+    background-color: #fff;
+    border-radius: 5px;
+}
+.sidebar ul li:hover > a {
+    color: #111;
+}
+.action-sidebar li{
+    display: inline-block;
+    color: #fff;
+}
+.action-sidebar:hover a > i {
+    color: #111;
+}
+.action-sidebar li {
+    padding: 5px !important;
+}
+.action-sidebar li a > i {
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
