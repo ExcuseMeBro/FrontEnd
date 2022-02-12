@@ -1,0 +1,35 @@
+.socials {
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.socials li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 35px;
+    font-size: 100px;
+}
+.socials li a {
+    color: #333;
+}
+.socials li:hover a > i {
+    transform: scale(2);
+    transition: all 0.3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+.socials li:hover .fa-facebook {
+    color: blue;
+}
+.socials li:hover .fa-instagram {
+    color: crimson;
+}
+.socials li:hover .fa-youtube {
+    color: red;
+}
+.socials li:hover .fa-twitter {
+    color: rgb(2, 174, 253);
+}
+.socials li:hover .fa-telegram {
+    color: rgb(0, 89, 255);
+}

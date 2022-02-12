@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.quti {
+  position: relative;
+  top: 150px;
+  left: 300px;
+  background-color: blueviolet;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  color: white;
+  /* transform: rotate(45deg); */
+  /* transform: translate(25px, 45px);
+    transform: translateX(50px);
+    transform: translateY(150px); */
+  transition: all 2s;
+  transform: skew(-45deg);
+}
+.quti:hover {
+  /* transform: rotateX(180deg); */
+  /* transform: scale(2); */
+  /* transform: scale(5, 2); */
+
+  transition: transform 2s;
+}
+
+.rotate1 {
+  width: 10rem;
+  height: 5rem;
+  background: skyblue;
+  margin: 5rem;
+  transform: perspective(50px) rotateX(-45deg);
+}
+.rotate2 {
+  width: 10rem;
+  height: 5rem;
+  background: skyblue;
+  margin: 5rem;
+  transform: perspective(200px) rotateX(45deg);
+}
