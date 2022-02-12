@@ -2,8 +2,16 @@
 /* index.html faylida tushuntirilgan! */
 
 // High - order function
-const greeting = function(greet){
+const greeting1 = function(greet){
     return function(name){
+        console.log(greet, name);
+    }
+}
+// greeting("Hello")("Bob");
+let a = "dsfsdf";
+const greeting2 = (greet) => {
+    return (name) => {
+        a += "dssdas";
         console.log(greet, name);
     }
 }
@@ -33,9 +41,16 @@ console.log(person.info);
 // "Mening ismim Mark. Yoshim 25 da!" ko`rinishida yozing)
 
 // Closures
-const follower = function(){
+/* const follower = function(){
     let following = 0;
     return function(){
+        following++
+        console.log(`${following} followers`);
+    }
+} */
+const follower = () => {
+    let following = 0;
+    return () => {
         following++
         console.log(`${following} followers`);
     }
@@ -67,11 +82,11 @@ console.log("-".repeat(25));
 const multiArray1 = [1, [1, 2], [45, 8], 15];
 console.log(multiArray1.flat());
 
-const multiArray2 = [1,[1,2, [2, 1], [1,2]], [45], 15];
+const multiArray2 = [1,[1,2, [2, [5]], [1,2]], [45], 15];
 console.log(multiArray2.flat());
 
 console.log(multiArray2.flat(1));
-console.log(multiArray2.flat(2));
+console.log(multiArray2.flat(3));
 // flatMap()
 const test = [[12,54,5,454,2],[15,454,54,84,54,5]];
 console.log(test.flatMap(item => item * 2));
