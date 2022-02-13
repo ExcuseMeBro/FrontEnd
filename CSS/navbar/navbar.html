@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="./nav.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="mobile-nav">
+        <a href="#"><i class="fab fa-google"></i></a>
+        <a href="#">CENTER</a>
+        <a href="#" id="open"><i class="fa fa-bars"></i></a>
+      </div>
+      <ul class="mobile">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li class="center"><a href="#">CENTER</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+      </ul>
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nulla perspiciatis nesciunt, animi, cupiditate voluptates debitis sint tempora, est error eligendi vitae et. Consequatur, fugit. Numquam autem, mollitia, aspernatur recusandae nihil eius ex commodi iure sed fugit ipsum magnam labore. Tempore eos debitis ipsum consequuntur aliquam veritatis neque quasi in voluptatem, nisi culpa quisquam blanditiis qui, perferendis necessitatibus officiis nesciunt ut quidem explicabo porro placeat at quae cumque! Vitae laudantium ipsam illum amet ex cumque pariatur. Alias consequatur voluptate facilis tempora quia recusandae repudiandae, maiores ipsum quam ducimus cupiditate ad nemo aliquam cumque doloribus dicta porro possimus cum! Quibusdam laborum praesentium excepturi perspiciatis nemo officiis, repudiandae voluptatem ipsa facere harum molestias enim quo accusamus nulla distinctio ab ducimus quidem eos sed? Rem neque eos aliquam necessitatibus et officia consequuntur quibusdam ullam ducimus tenetur. Quasi iure aperiam, eos nesciunt placeat inventore quod minima assumenda maxime aliquid officiis at. Officia, molestias pariatur?
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+        $(document).ready(() => {
+            $('#open').click(() => {
+                $('.mobile').slideToggle();
+            })
+        });
+    </script>
+  </body>
+</html>
