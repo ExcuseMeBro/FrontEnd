@@ -5,8 +5,8 @@ $(document).ready(function () {
     // $(".box").animate({ width: "400px" });
   });
   $("#btn2").click(function () {
-    $(".box").animate({ height: "200px", width: "200px" });
-    $(".box").animate({ width: "200px" });
+    $(".box").animate({ height: "200px", width: "200px" }, 5000);
+    // $(".box").animate({ width: "200px" });
   });
   // 2. clearQueue() function
   $("#play").click(function () {

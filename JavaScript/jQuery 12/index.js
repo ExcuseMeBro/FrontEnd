@@ -1,13 +1,13 @@
-$(document).ready(function hello() {
+$(document).ready(() => {
   //1. blur() event
-  /* $("input").blur(function (kkk) { 
+ /*  $("input").blur((kkk) => { 
         // alert("Hello world!");
         //TODO: Inputdagi ma`lumotni olib alertga chiqaring
-        alert($(this).val());
-        console.log(kkk);
+        // alert($(this).val());
+        console.log($('input').val());   
   }); */
   //2. change() event
-  /* $("input").change(function () { 
+ /*  $("input").change(function () { 
         // alert("Hello world!");
         console.log($(this).val());
         //TODO: Inputdagi ma`lumotni olib Yuqori registerda yozib beruvchi dastur tuzing
@@ -62,22 +62,22 @@ $(document).ready(function hello() {
     }); */
   //12. after() event
   // $(".btn").click(function (){
-  //       $(".table").after('<h1 style="color: red">Hello Wolrd!</h1>');
+  //       $(".table").after('<h1 style="color: red">Hello World!</h1>');
   //   });
   //13. mouseup() and mousedown() events
   /* $('.table').mouseup(function (){
-        $(this).after('<h1 style="color: red">hello Wolrd!</h1>');
+        $(this).after('<h1 style="color: red">hello World!</h1>');
     });
     $('.table').mousedown(function (){
-        $(this).after('<h1 style="color: green">hello Wolrd!</h1>');
+        $(this).after('<h1 style="color: green">hello World!</h1>');
     }); */
   //14. mouseenter() event
   /* $('.table').mouseenter(function (){
-        $(this).after('<h1 style="color: green">hello Wolrd!</h1>');
-    }); */
+    $(this).after('<h1 style="color: green">hello World!</h1>');
+  }); */
   //15. mouseleave() event
   /* $('.table').mouseleave(function (){
-        $(this).after('<h1 style="color: red">hello Wolrd!</h1>');
+        $(this).after('<h1 style="color: red">hello World!</h1>');
     }); */
   //16. mousemove() event
   /* $(document).mousemove(function (event){
@@ -105,7 +105,7 @@ $(document).ready(function hello() {
   }); */
   
   //18. on() event
-  $(".table").on("mouseleave click", function () {
+ /*  $(".table").on("mouseleave click", function () {
     $(this).css("background", "red");
-  });
+  }); */
 });
