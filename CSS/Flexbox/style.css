@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.boxes {
+    background-color: rgb(243, 168, 141);
+}
+.box {
+    background-color: crimson;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+}
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+.box {
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .kv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    width: 100%;
+    height: 100vh;
+} */
+
+.bir {
+    flex: 1;
+}
+.ikki {
+    flex: 2;
+}
+.uch {
+    flex: 3;
+}
+.tort {
+    flex: 4;
+}
