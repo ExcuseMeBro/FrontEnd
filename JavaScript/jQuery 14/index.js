@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // 1. addClass()
-  $("#hide").click(function () {
+  $("#hide").click(() => {
     $(".box").addClass("hidden");
   });
   // 2. after()
@@ -11,7 +11,8 @@ $(document).ready(function () {
   // 3. append()
   $("#new").click(function () {
     if ($("#data").val() !== "") {
-      $(".report-table ul").append("<li>" + $("#data").val() + "</li>");
+      // $(".report-table ol").append("<li>" + $("#data").val() + "</li>");
+      $(".report-table ol").append(`<li>${$("#data").val()} + "</li>`);
       $("#data").val("");
       // Success
       $(".success").show(function () {
@@ -33,13 +34,13 @@ $(document).ready(function () {
   // 5. prop()
   $(":checkbox").change(function () {
     if ($("#red").prop("checked")) {
-      $(".box").css("background", "red");
+      $("body").css("background", "red");
     } else if ($("#green").prop("checked")) {
-      $(".box").css("background", "green");
+      $("body").css("background", "green");
     } else if ($("#blue").prop("checked")) {
-      $(".box").css("background", "blue");
+      $("body").css("background", "blue");
     } else {
-      $(".box").css("background", "blueviolet");
+      $("body").css("background", "blueviolet");
     }
   });
   // 6. attr()
