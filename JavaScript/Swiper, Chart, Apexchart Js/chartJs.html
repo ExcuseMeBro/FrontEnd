@@ -7,7 +7,7 @@
     <title>Chart</title>
   </head>
   <body>
-    <canvas id="myChart" width="400" height="400"></canvas>
+    <canvas id="myChart"></canvas>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"
       integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ=="
@@ -15,7 +15,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
-        let ctx = document.getElementById("myChart");
+      let ctx = document.getElementById("myChart");
       const myChart = new Chart(ctx, {
         type: "doughnut",
         data: {
@@ -32,7 +32,7 @@
                 "rgba(153, 102, 255, 1)",
                 "rgba(255, 159, 64, 1)",
               ],
-              hoverOffset: 10
+              hoverOffset: 100
             },
           ],
         },

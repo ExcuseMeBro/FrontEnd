@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sidebar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            position: relative;
+        }
+        .wrapper {
+            width: 325px;
+            height: 100vh;
+            background-color: #777;
+            padding: 15px;
+            position: absolute;
+            left: -255px;
+            transition: all 1s ease;
+        }
+        .active {
+            left: 0;
+        }
+        ul li {
+            list-style: none;
+            padding: 5px;
+        }
+        ul li:hover {
+            background-color: #999;
+            cursor: pointer;
+        }
+        ul li > a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: aliceblue;
+            font-size: 25px;
+        }
+        .toggleBtn {
+            display: flex;
+            justify-content: end;
+        }
+        .toggleBtn i {
+            font-size: 20px;
+            padding: 10px;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            color: #eee;
+            cursor: pointer;
+        }
+        .d-none {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper active">
+        <div class="toggleBtn">
+            <i class="fa fa-bars"></i>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+        </ul>        
+    </div>
+    <script src="../../../libs/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $('.toggleBtn').click(function () {
+                $('.wrapper').toggleClass('active');
+                $('.wrapper ul').toggleClass('d-none')
+            })
+        });
+    </script>
+</body>
+</html>
